@@ -105,6 +105,17 @@ for(i=1 ; i <= tableauDeLaFamille.length ; i=i+1){
 */
 	
 }
+var tab1d = ['a','b','c'];
+//afficheMembreFamille(tab1d);
 
+var tab2D = [['x','x','o'],['o','x','x'],['o','x','o']];
+afficheTab2D(tab2D);
 
+function afficheTab2D(tab){
+    for(i=0 ; i < tab.length ; i=i+1){        
+        for(j=0 ; j < tab[i].length ; j++){
+            console.log(tab[i][j]);
+        }
+    }
+}
 
