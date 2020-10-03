@@ -108,10 +108,19 @@ for(i=1 ; i <= tableauDeLaFamille.length ; i=i+1){
 var tab1d = ['a','b','c'];
 //afficheMembreFamille(tab1d);
 
-var tab2D = [['x','x','o'],['o','x','x'],['o','o','m']];
+var tab2D = [['x','x','o','x'],['x','o','x','x'],['x','o','o','m'],['x','o','o','m']];
 afficheTab2D(tab2D);
 
 function afficheTab2D(tab){
+
+    var nb_colonnes = tab[0].length;
+
+    var laPremiereLigne = "";
+    for(k=1 ; k <= nb_colonnes ; k++){
+        laPremiereLigne += " "+k;
+    }
+    console.log("  "+laPremiereLigne);
+
 
     for(i=0 ; i < tab.length ; i=i+1){    // pour chaque élément de la première dimension
 
@@ -122,12 +131,12 @@ function afficheTab2D(tab){
 
             //console.log(tab[i][j]); //affiche l'élément et un retour à la ligne            
             laLigne+= "|"+tab[i][j];   
-/*            if(j==2){
+          /*  if(j==2){
                 laLigne+= "|";
             }     */
         }
         // affiche la ligne
-        console.log(laLigne+"|");
+        console.log((i+1)+" "+laLigne+"|");
     }
 
 }
