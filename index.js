@@ -116,14 +116,18 @@ function afficheTab2D(tab){
     for(i=0 ; i < tab.length ; i=i+1){    // pour chaque élément de la première dimension
 
         //affiche une ligne avec les 3 éléments de la 2eme dimension
-        var laLigne = "";
+        var laLigne = ""; // xxx --> | x | x | x |
+        
         for(j=0 ; j < tab[i].length ; j++){  //pour chaque élément de la 2eme dimension
 
             //console.log(tab[i][j]); //affiche l'élément et un retour à la ligne            
-            laLigne+= tab[i][j];        
+            laLigne+= "|"+tab[i][j];   
+/*            if(j==2){
+                laLigne+= "|";
+            }     */
         }
         // affiche la ligne
-        console.log(laLigne);
+        console.log(laLigne+"|");
     }
 
 }
