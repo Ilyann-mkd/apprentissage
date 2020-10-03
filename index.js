@@ -70,28 +70,28 @@ Les tableaux sont indexés à partir de ZERO (0) zéro
 console.log("Pour afficher Zakia " + mekdad[1] );
 console.log("Pour afficher Ilyann " + mekdad[2] );
 console.log("Pour afficher une erreur " + mekdad[8] );
-afficheMembreFamille(mekdad);
+afficheMembreFamille( mekdad);
 // Ajout d'un élément dans le tableau
 mekdad[3]= "Adam";
 afficheMembreFamille(mekdad);
 
 
 function afficheMembreFamille(tableauDeLaFamille){
-	console.log("La famille est composée de :");
+    console.log("La famille est composée de :");
 
-	for(i=0 ; i < mekdad.length ; i=i+1){
-		console.log(mekdad[i]);
+	for(i=0 ; i < tableauDeLaFamille.length ; i=i+1){
+		console.log(tableauDeLaFamille[i]);
 	}
-	//	mekdad.length == 3
+	//	tableauDeLaFamille.length == 3
 	//	i = 0 - 1 - 2 - STOP
 
 /*
 Autre manière de boucler, mais avec le compteur qui démarre à 1
-for(i=1 ; i <= mekdad.length ; i=i+1){
-	console.log(mekdad[i-1]);
+for(i=1 ; i <= tableauDeLaFamille.length ; i=i+1){
+	console.log(tableauDeLaFamille[i-1]);
 }
 
-//	mekdad.length == 3
+//	tableauDeLaFamille.length == 3
 //	i = 1 - 2 - 3 - STOP
 */
 
