@@ -69,6 +69,7 @@ Les tableaux sont indexés à partir de ZERO (0) zéro
 */
 console.log("Pour afficher Zakia " + mekdad[1] );
 console.log("Pour afficher Ilyann " + mekdad[2] );
+console.log("Pour afficher une erreur " + mekdad[8] );
 afficheMembreFamille(mekdad);
 // Ajout d'un élément dans le tableau
 mekdad[3]= "Adam";
