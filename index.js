@@ -105,11 +105,19 @@ for(i=1 ; i <= tableauDeLaFamille.length ; i=i+1){
 */
 	
 }
+
+/*
+    Exercice sur les tableaux à 2 dimensions
+*/
 var tab1d = ['a','b','c'];
 //afficheMembreFamille(tab1d);
 
-var tab2D = [['x','x','o','x'],['x','o','x','x'],['x','o','o','m'],['x','o','o','m']];
-afficheTab2D(tab2D);
+
+var tab2D33 = [['x','o','x'],['o','x','x'],['o','o','m']];
+afficheTab2D(tab2D33);
+
+var tab2D44 = [['x','x','o','x'],['x','o','x','x'],['x','o','o','m'],['x','o','o','m']];
+afficheTab2D(tab2D44);
 
 function afficheTab2D(tab){
 
@@ -141,3 +149,24 @@ function afficheTab2D(tab){
 
 }
 
+/*
+
+    DEVOIRS 
+*/
+console.log("**************************************");
+console.log("Représenter la grille du morpion, en utilisant seulement un tableau à une seule dimension");
+
+var laGrille = ['a','b','c','d','e','f','g','h','i'];
+affiche2DaPartirTableau1D(laGrille);
+/*
+Output attendu: 
+   1 2 3
+1 |a|b|c|
+2 |d|e|f|
+3 |g|h|i|
+
+*/
+
+function affiche2DaPartirTableau1D(tab){
+    console.log("Ca ne marche pas");
+}
