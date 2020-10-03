@@ -157,16 +157,35 @@ console.log("**************************************");
 console.log("Représenter la grille du morpion, en utilisant seulement un tableau à une seule dimension");
 
 var laGrille = ['a','b','c','d','e','f','g','h','i'];
-affiche2DaPartirTableau1D(laGrille);
+afficheCarreAPartirTableau1D(laGrille);
+var laGrille2 = ['a','b','c','d'];
+afficheCarreAPartirTableau1D(laGrille2);
+var laGrille3 = ['a','b','c'];
+afficheCarreAPartirTableau1D(laGrille3);
 /*
 Output attendu: 
    1 2 3
 1 |a|b|c|
 2 |d|e|f|
 3 |g|h|i|
-
+   1 2 
+1 |a|b|
+2 |d|e|
+Erreur, la Grille n'est pas carrée
 */
 
-function affiche2DaPartirTableau1D(tab){
-    console.log("Ca ne marche pas");
+function afficheCarreAPartirTableau1D(tab){
+    
+
+    var tailleCote = Math.sqrt(tab.length);
+     if(Number.isInteger(tailleCote)){
+         console.log("taille du côté: " + tailleCote);
+
+        // --> Afficher la Grille
+
+     } else {
+         console.log("Erreur, la Grille n'est pas carrée");
+     }
+
+    
 }
