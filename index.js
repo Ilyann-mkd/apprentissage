@@ -178,13 +178,19 @@ function afficheCarreAPartirTableau1D(tab){
     
 
     var tailleCote = Math.sqrt(tab.length);
+    var output2 ="";
      if(Number.isInteger(tailleCote)){
          console.log("taille du côté: " + tailleCote);
 
-        // --> Afficher la Grille
-
+         // --> Afficher la Grille
+        
      } else {
          console.log("Erreur, la Grille n'est pas carrée");
+         console.log()
+         console.log(output2 = "   1 2 3\n"+"A "+"|"+laGrille[0]+"|"+laGrille[1]+"|"+laGrille[2]+"|\n" + "B " + "|"+laGrille[3]+"|"+laGrille[4]+"|"+laGrille[5]+"|\n"+"C "+"|"+laGrille[6]+"|"+laGrille[7]+"|"+laGrille[8]+"|" );
+        // console.log(output2 =  );
+        // console.log(output2 =  );
+         
      }
 
     
