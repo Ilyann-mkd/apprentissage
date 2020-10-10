@@ -1,16 +1,43 @@
 
-var prompt = require('prompt-sync')();
+var prompt = require('prompt-sync')({"sigint":true});
 
 var name = prompt('Quel est le nom du Joueur 1 ?          ');
 var name2 = prompt('Quel est le nom du Joueur 2 ?          ');
-console.log('Bonjour à vous '+name+ " et " +name2);
+console.log('Bonjour à vous ' + name + " et " + name2);
 
-for(i=0 ; i < 3 ; i++){
+console.log("Phase de placement")
+for (i = 0; i < 3; i++) {
 
-    var toursJ1 = prompt( name+ " Où veut tu jouer ?")
-    var toursJ2 = prompt( name2+ " Où veut tu jouer ?")
+    var toursJ1 = prompt(name + " Où veux tu jouer ?");
+    var toursJ2 = prompt(name2 + " Où veux tu jouer ?");
 
 }
+
+console.log("Phase de mouvement")
+while (personnenaGagne()) {
+    var toursJ1 = prompt(name + " Qui comment on déplace ?");
+    var toursJ2 = prompt(name2 + " Qui comment on déplace ?");
+}
+
+if(){
+
+    console.log("Bravo" +name+ ", tu as gagné !");
+
+}else {
+
+    console.log("Bravo" +name2+ ", tu as gagné !");
+
+}
+
+
+
+
+
+function personnenaGagne() {
+
+    return true;
+}
+
 /* 
 Présentation + recup des infos des deux users 
 Affiche la grille vide 
