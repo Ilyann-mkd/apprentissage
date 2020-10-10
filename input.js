@@ -1,9 +1,16 @@
 
 var prompt = require('prompt-sync')();
 
-var name = prompt('Comment tu t\'appelles ?          ');
-console.log('Bonjour à toi: '+name);
+var name = prompt('Quel est le nom du Joueur 1 ?          ');
+var name2 = prompt('Quel est le nom du Joueur 2 ?          ');
+console.log('Bonjour à vous '+name+ " et " +name2);
 
+for(i=0 ; i < 3 ; i++){
+
+    var toursJ1 = prompt( name+ " Où veut tu jouer ?")
+    var toursJ2 = prompt( name2+ " Où veut tu jouer ?")
+
+}
 /* 
 Présentation + recup des infos des deux users 
 Affiche la grille vide 
