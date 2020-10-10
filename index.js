@@ -232,6 +232,13 @@ function afficheCarreAPartirTableau1D(tab) {
 
 function traduitEnLettre(numeroDeLettre){
 
+    // on le fait à notre sauce, mais on aurait aussi pu utiliser:
+    // String.fromCharCode(97 + n);
+        // qui s'appuie sur la table ASCII https://fr.wikibooks.org/wiki/Les_ASCII_de_0_%C3%A0_127/La_table_ASCII
+    // ou encore 
+    // char='abcdefghijklmnopqrstuvwxyz'.charAt(code);
+    // qui est plus compact comme écriture mais moins lisible
+
     const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y','z'];
     var reponse = "XX";     
     //console.log( "numeroDeLettre:" + numeroDeLettre + " " +alphabet[numeroDeLettre]);
